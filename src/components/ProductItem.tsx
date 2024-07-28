@@ -58,7 +58,7 @@ export function ProductItem({ product, onDragMove }: ProductItemProps) {
     >
       <div className="px-5 pb-3 pt-4">
         <p className="w-fit rounded-e-full rounded-s-full border border-solid border-ib-gray px-[10px] py-[5px] text-[8px] leading-[1] text-ib-gray">{`${texts.badge} PC`}</p>
-        <Image
+        <img
           src={product.img}
           alt={product.name}
           width={172}
@@ -86,7 +86,7 @@ export function ProductItem({ product, onDragMove }: ProductItemProps) {
             <a className="text-[#004CFF]">{` $${product.installmentPrice.toLocaleString()}/mo `}</a>
             with
           </p>
-          <Image
+          <img
             src={affirmIcon}
             alt="Affirm"
             width={53}
